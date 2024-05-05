@@ -5,3 +5,4 @@ pydeck
 streamlit
 ffmpeg-python
 requests
+google-cloud-firestore
