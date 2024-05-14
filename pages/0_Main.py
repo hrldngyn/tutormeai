@@ -7,19 +7,19 @@ import json
 import subprocess
 import re
 
-key_dict = json.loads(st.secrets["textkey"])
-creds = service_account.Credentials.from_service_account_info(key_dict)
-db = firestore.Client(credentials=creds, project="tutormeai")
+# key_dict = json.loads(st.secrets["textkey"])
+# creds = service_account.Credentials.from_service_account_info(key_dict)
+# db = firestore.Client(credentials=creds, project="tutormeai")
 
-# Create a reference to the Google post.
-doc_ref = db.collection("users").document("Harold")
+# # Create a reference to the Google post.
+# doc_ref = db.collection("users").document("Harold")
 
-# Then get the data at that reference.
-doc = doc_ref.get()
+# # Then get the data at that reference.
+# doc = doc_ref.get()
 
-# Let's see what we got!
-st.write("The id is: ", doc.id)
-st.write("The contents are: ", doc.to_dict())
+# # Let's see what we got!
+# st.write("The id is: ", doc.id)
+# st.write("The contents are: ", doc.to_dict())
 
 # def download_file(url):
 #     #local_filename = url.split('/')[-1]
